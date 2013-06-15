@@ -23,14 +23,7 @@
 	vector-effect: non-scaling-stroke;
 }
 
-#copy {
-	color: #000;
-	opacity: .5;
-}
 
-#copy a {
-	color: #000;
-}
 body {
     	background: black;
     	font-family: Lato;
@@ -47,23 +40,39 @@ p {
 }
 
 .l-box {
-    padding: 1.3em;
+    padding: 1%;
 }
+
 .ku {
 	text-align: center;
 }
+
 .ku h1 {
 	font-size: 700%;
 	margin: 0;
-	padding: 3%;
+	padding: 2%;
 	color: #1f8dd6;
 	font-weight: 100;
 }
+
 .ku h2 {
 	font-weight: 100;
 	font-size: 500%;
-	margin: 0.02em 0 0.8em;
+	margin: 0.02em 0 0.08em;
 	color: #666;
+}
+
+.ku-cta pre {
+  padding: 1%;
+  font-size: 100%;
+}
+.click{
+  cursor:pointer;
+}
+
+.expand{
+  display:none;
+  position: relative;
 }
 
 h3 {
@@ -72,8 +81,13 @@ h3 {
   color:#CCCCCC;
 }
 
-.ku-cta pre {
-	padding: 1em;
-	font-size: 100%;
-}
 
+.k-box{
+	margin-top: .2em;
+}
+.pure-button-secondary {
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background: #1f8dd6;
+}

@@ -12,12 +12,20 @@
 <script type="text/javascript" src="../polymaps/polymaps.js"></script>
 <script type="text/javascript" src="map-data.js"></script>
 <a href="http://jquery.com/">jQuery</a>
-    <script src="jquery-1.10.1.min.js"></script>
-    <script>
- 
-    // Your code goes here.
- 
-    </script>
+  <script src="jquery-1.10.1.min.js"></script>
+  <script>
+	$(document).ready(function() {
+		
+      $(".click").click(function() {
+        var target = $(this).parent().children(".expand");
+		$(target).slideToggle('slow');
+		document.getElementById('expand').scrollIntoView(true);
+	  });
+	 
+	
+	});
+
+  </script>
 </head>
 
 <body>
@@ -39,37 +47,67 @@
     <div class="grid_12">
       <h1>Sentiment-Mapper</h1>
     </div>
-    <!-- end .grid_6-->
+    <!-- end .grid_12-->
     <div class="grid_12">
       <h2>A real-time analytics engine for Twitter</h2>
     </div>
     <!-- end .grid_12-->
   </div>
-    <div class="grid_6">
-      <div class="l-box">
+  <div class="grid_6">
+    <div class="l-box">
 
-  	  	<h3> Simply search for a topic, and view sentiment about that topic around the United States.</h3>
-  	  	<p> We parse thousands of tweets a minute to analyze current sentiment on Twitter. 
-  	  		Using machine-learning classifiers and a real-time stream from Twitter, our Twitter-Mapper makes
-  	  		visualizing trends on Twitter easier than ever.
-  	  	</p>
+      <h3> Simply search for a topic, and view sentiment about that topic around the United States.</h3>
+  	  <p> We parse thousands of tweets a minute to analyze current sentiment on Twitter. 
+  	      Using machine-learning classifiers and a real-time stream from Twitter, our Twitter-Mapper makes
+  	  	  visualizing trends on Twitter easier than ever.
+  	  </p>
  
-  	  </div>
-    </div>
-    <!-- end .grid_6-->
- 
-    <div class="grid_6">
-      <div class="l-box">
-  	  	<h3 align="center"> Screenshot of Map goes here</h3>
-  	  </div>
-    </div>
-    <!-- end .grid_6-->
-  
-  
+  	</div>
+  </div>
   <!-- end .grid_6-->
  
-	
-	
+  <div class="grid_6">
+    <div class="l-box">
+  	  <h3 align="center"> Screenshot of Map goes here</h3>
+  	</div>
+  </div>
+  <!-- end .grid_6-->
+  
+  <div class="grid_12">
+    <h3 class="click" align="center">
+      <button class="pure-button pure-button-secondary">Try it now</button>
+    </h3>
+    
+    
+    <div class="expand">
+      <div class="grid_9">
+      	<div id="map">
+      	  <script type="text/javascript" src="maptest.js"></script>
+      	</div>
+      </div>
+  
+      <div class="grid_2">
+        <div class="pure-menu pure-menu-open">
+    	  <a class="pure-menu-heading">Trending Topics</a>
+    		<ul>
+        	  <li><a href="#">Topic 1</a></li>
+        	  <li><a href="#">Topic 2</a></li>
+        	  <li><a href="#">Topic 3</a></li>
+        	  <li><a href="#">Topic 4</a></li>
+        	  <li><a href="#">Topic 5</a></li>
+        	  <li><a href="#">Topic 6</a></li>
+        	  <li><a href="#">Topic 7</a></li>
+    	   </ul>
+	     </div>
+      </div> 
+    </div>
+
+  </div>
+  <div class="grid_12">
+  	<p align="center">HEADER</p>
+  </div>
+  
 </div>
 </body>
+</html>
 	

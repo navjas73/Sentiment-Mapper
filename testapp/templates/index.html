@@ -1,72 +1,39 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sentiment Mapper 1.0 </title>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Sentiment Mapper 1.0 </title>
 
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.2.0/pure-min.css">
-    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.10.3/build/cssfonts/cssfonts-min.css"> 
-    
-    <script type="text/javascript" src="../polymaps/lib/protovis/protodata.js"></script>
-    <script type="text/javascript" src="../polymaps/polymaps.js"></script>
-    <script type="text/javascript" src="map-data.js"></script>
-    <style type="text/css">
+		<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.2.0/pure-min.css">
+		<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.10.3/build/cssfonts/cssfonts-min.css">
+		<link rel="stylesheet" type = "text/css" href="type.css">
 
-@import url("../polymaps/lib/colorbrewer/colorbrewer.css");
-@import url("../polymaps/example/example.css");
-#map {
-    background: #E6E6E6;
-}
+		<script type="text/javascript" src="../polymaps/lib/protovis/protodata.js"></script>
+		<script type="text/javascript" src="../polymaps/polymaps.js"></script>
+		<script type="text/javascript" src="map-data.js"></script>
 
-.layer path {
-fill: none;
-stroke: #aaa;
-stroke-width: .25px;
-vector-effect: non-scaling-stroke;
-}
+	</head>
 
-#state path {
-stroke: #fff;
-stroke-width: 1.5px;
-vector-effect: non-scaling-stroke;
-}
+	<body>
 
-#copy {
-color: #000;
-opacity: .5;
-}
+		<div class="pure-u" id="main">
+			<div class="pure-g">
+				<div class="ku">
+					<h1 class="pure-u-1" align="center"> Sentiment Mapper </h1>
+				</div>
+			</div>
+		</div>
 
-#copy a {
-color: #000;
-}
+		<div class="pure-g">
+			<div class="pure-u-4-5">
+				<p id="map">
+					<script type="text/javascript" src="maptest.js"></script>
+					<span id="copy"> &copy; 2010 </span>
+				</p>
+			</div>
 
-.ku {
-    text-align: center;
-    margin: 8em 0 3em;
-}
-    .ku h1 {
-        font-size: 600%;
-        margin: 0;
-        padding: 0;
-        color: #1f8dd6;
-        font-weight: 150;
-	padding: 
-    }
+		</div>
 
-
-
-</style>
-
-</head>
-
-<body>
-
-<div class="pure-u" id="main">
-    <div class="ku">
-	<h1 class="pure-u-1" align="center"> Sentiment Mapper </h1>
-    </div>
-</div>
-
-</body>
+	</body>
 </html>

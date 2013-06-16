@@ -4,7 +4,7 @@
 
 #map {
 	background: #E6E6E6;
-	
+	padding: 3%;
 }
 
 .maptype {
@@ -40,7 +40,8 @@ p {
 }
 
 .l-box {
-    padding: 1%;
+	float: left;
+    padding: 3%;
 }
 
 .ku {
@@ -90,4 +91,24 @@ h3 {
   border-radius: 4px;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   background: #1f8dd6;
+}
+
+a.pure-button-cta{
+	background: #1f8dd6;
+    color: white;
+    border: 1px solid #1f8dd6;
+    font-size: 120%;
+    font-weight: 100;
+    margin: 0.25em 0;
+}
+
+.accordionButton {
+	cursor: pointer;
+	color: white;
+    border-radius: 4px;
+    background: rgb(66, 184, 221);
+}
+
+.accordionContent{
+	display: none;
 }

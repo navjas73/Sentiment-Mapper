@@ -11,16 +11,32 @@
 <script type="text/javascript" src="../polymaps/lib/protovis/protodata.js"></script>
 <script type="text/javascript" src="../polymaps/polymaps.js"></script>
 <script type="text/javascript" src="map-data.js"></script>
+<a href="http://jquery.com/">jQuery</a>
+<script src="jquery-1.10.1.min.js"></script>
 
+  <script>
+  $(document).ready(function() {
+
+    $('div.accordionButton').click(function() {
+        $('div.accordionContent').slideUp('fast');  
+        if(!$(this).next().is(':visible')){
+        $(this).next().slideDown('fast');
+        }
+    });
+    
+    $("div.accordionContent").hide();
+
+
+  });​​
+  </script>
+ 
 </head>
-
-<body>
 <div class="container_12">
   <div class="grid_6 prefix_6">
   	<div class="pure-menu pure-menu-open pure-menu-fixed pure-menu-horizontal">
-      <a class="pure-menu-heading" href="main.html">Jasty Technology</a>
+      <a class="pure-menu-heading" href="">Jasty Technology</a>
       <ul>
-        <li class="pure-menu-selected"><a href="main.html">Home</a></li>
+        <li class="pure-menu-selected"><a href="#">Home</a></li>
         <li><a href="map.html">Map</a></li>
         <li><a href="api.html">API</a></li>
         <li><a href="blog.html">Blog</a></li>
@@ -28,48 +44,31 @@
       </ul>
     </div>
   </div>
-  <!-- end .grid_6-->
-  <div class="ku">
-    <div class="grid_12">
-      <h1>Sentiment-Mapper</h1>
+  <div class="l-box">
+    <div class="grid_12"> <br>
+    	<form class="pure-form">
+    	  <input type="text" class="pure-input-rounded">
+    	    <button type="submit" class="pure-button">Search</button>
+	    </form>
+	    <br>
     </div>
-    <!-- end .grid_12-->
-    <div class="grid_12">
-      <h2>A real-time analytics engine for Twitter</h2>
-    </div>
-    <!-- end .grid_12-->
-  </div>
-  <div class="grid_6">
-
-
-      <h3> Simply search for a topic, and view sentiment about that topic around the United States.</h3>
-  	  <p> We parse thousands of tweets a minute to analyze current sentiment on Twitter. 
-  	      Using machine-learning classifiers and a real-time stream from Twitter, our Twitter-Mapper makes
-  	  	  visualizing trends on Twitter easier than ever.
-  	  </p>
- 
-
-  </div>
-  <!-- end .grid_6-->
- 
-  <div class="grid_6">
-
-  	  <h3 align="center"> Screenshot of Map goes here</h3>
-
-  </div>
-  <!-- end .grid_6-->
+ 	<div class="ku">
+	  <div class="grid_9">
+    	<div id="map">
+      	  <script type="text/javascript" src="maptest.js"></script>
+      	</div>
+      </div>
   
-  <div class="grid_12">
-  	<div align="center">
-      <a class="pure-button pure-button-cta" href="map.html">Get Started</a>
-   </div>
+  	  <div class="grid_2">
+  	  	<p>JQUERY ACCORDION MENU GOES HERE</p>
+  	  </div>
+    </div>      
   </div>
-  
   <div class="grid_12">
   	<p align="center">FOOTER</p>
   </div>
   
 </div>
+
 </body>
 </html>
-	

@@ -11,7 +11,21 @@
 <script type="text/javascript" src="../polymaps/lib/protovis/protodata.js"></script>
 <script type="text/javascript" src="../polymaps/polymaps.js"></script>
 <script type="text/javascript" src="map-data.js"></script>
+<a href="http://jquery.com/">jQuery</a>
+  <script src="jquery-1.10.1.min.js"></script>
+  <script>
+	$(document).ready(function() {
+		
+      $(".click").click(function() {
+        var target = $(this).parent().children(".expand");
+		$(target).slideToggle('slow');
+		document.getElementById('expand').scrollIntoView(true);
+	  });
+	 
+	
+	});
 
+  </script>
 </head>
 
 <body>
@@ -60,13 +74,37 @@
   <!-- end .grid_6-->
   
   <div class="grid_12">
-  	<div align="center">
-      <a class="pure-button pure-button-cta" href="map.html">Get Started</a>
-   </div>
-  </div>
+    <h3 class="click" align="center">
+      <button class="pure-button pure-button-secondary">Try it now</button>
+    </h3>
+    
+    
+    <div class="expand">
+      <div class="grid_9">
+      	<div id="map">
+      	  <script type="text/javascript" src="maptest.js"></script>
+      	</div>
+      </div>
   
+      <div class="grid_2">
+        <div class="pure-menu pure-menu-open">
+    	  <a class="pure-menu-heading">Trending Topics</a>
+    		<ul>
+        	  <li><a href="#">Topic 1</a></li>
+        	  <li><a href="#">Topic 2</a></li>
+        	  <li><a href="#">Topic 3</a></li>
+        	  <li><a href="#">Topic 4</a></li>
+        	  <li><a href="#">Topic 5</a></li>
+        	  <li><a href="#">Topic 6</a></li>
+        	  <li><a href="#">Topic 7</a></li>
+    	   </ul>
+	     </div>
+      </div> 
+    </div>
+
+  </div>
   <div class="grid_12">
-  	<p align="center">FOOTER</p>
+  	<p align="center">HEADER</p>
   </div>
   
 </div>

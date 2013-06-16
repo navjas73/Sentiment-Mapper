@@ -1,0 +1,12 @@
+fp = open( 'sentiment.csv', 'rb')
+reader = csv.reader(fp, delimiter = ',', quotechar = '"', escapechar='\\')
+    for row in reader:
+...     text = row[4]
+...     sentiment = row[1]
+        call = "insert into tweets values (" + text + ", unknown
+...     conn = sqlite3.connect('test.db')
+...     c = conn.cursor()
+...     c.execute("insert into tweets values (text, 'unknown', sentiment, 'unknown')")
+...     conn.commit()
+...     conn.close()
+

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?><Response xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/search/local/ws/rest/v1"><Copyright>Copyright © 2013 Microsoft and its suppliers. All rights reserved. This API cannot be accessed and the content and any results may not be used, reproduced or transmitted in any manner without express written permission from Microsoft Corporation.</Copyright>
+<BrandLogoUri>http://dev.virtualearth.net/Branding/logo_powered_by.png</BrandLogoUri>
+<StatusCode>200</StatusCode>
+<StatusDescription>OK</StatusDescription>
+<AuthenticationResultCode>ValidCredentials</AuthenticationResultCode>
+<TraceId>2a35184eb81d48e49c1bd687651a81b7|EWRM003303|02.00.150.1300|EWRMSNVM003159, EWRMSNVM003196</TraceId>
+<ResourceSets>
+	<ResourceSet>
+		<EstimatedTotal>1</EstimatedTotal>
+		<Resources>
+			<Location>
+				<Name>1 Microsoft Way, Redmond, WA 98052</Name>
+				<Point>
+					<Latitude>47.640570402145386</Latitude>
+					<Longitude>-122.12937377393246</Longitude>
+				</Point>
+				<BoundingBox>
+					<SouthLatitude>47.636707684574709</SouthLatitude>
+					<WestLongitude>-122.13701709146854</WestLongitude>
+					<NorthLatitude>47.644433119716062</NorthLatitude>
+					<EastLongitude>-122.12173045639638</EastLongitude>
+				</BoundingBox>
+				<EntityType>Address</EntityType>
+				<Address>
+					<AddressLine>1 Microsoft Way</AddressLine>
+					<AdminDistrict>WA</AdminDistrict>
+					<AdminDistrict2>King Co.</AdminDistrict2>
+					<CountryRegion>United States</CountryRegion>
+					<FormattedAddress>1 Microsoft Way, Redmond, WA 98052</FormattedAddress>
+					<Locality>Redmond</Locality>
+					<PostalCode>98052</PostalCode>
+				</Address>
+
+<Confidence>Medium</Confidence><MatchCode>Good</MatchCode><GeocodePoint><Latitude>47.640570402145386</Latitude><Longitude>-122.12937377393246</Longitude><CalculationMethod>Interpolation</CalculationMethod><UsageType>Display</UsageType><UsageType>Route</UsageType></GeocodePoint></Location></Resources></ResourceSet></ResourceSets></Response>
+

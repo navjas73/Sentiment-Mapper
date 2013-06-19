@@ -4,6 +4,7 @@ import csv
 
 
 # read all tweets and labels
+
 fp = open( 'sentiment.csv', 'rb' )
 reader = csv.reader( fp, delimiter=',', quotechar='"', escapechar='\\' )
 tweets = []
@@ -47,5 +48,6 @@ word_features = get_features(get_words(filtered_tweets))
 training_set = nltk.classify.apply_features(extract_features, tweets)
 classifier = nltk.NaiveBayesClassifier.train(training_set)
 
-#tweet = tweet from database
-#print classifier.classify(extract_features(tweet.split()))
+tweet = "The weather today is beautiful"
+print classifier.prob_classify(extract_features(tweet.split()))
+

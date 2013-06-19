@@ -8,9 +8,10 @@ import xml.etree.ElementTree as ET
 
 latstr = str(lat)
 lonstr = str(lon)
+key = ''
 
 
-url = 'http://dev.virtualearth.net/REST/v1/Locations/' + latstr + ',' + lonstr + '?o=xml&key=AgqN2WGsxDmLMM6vJUWctW5kRLkgNcMjYJ7iuf2rRy27mwjOQh1mU8oi9VDMIEsj'
+url = 'http://dev.virtualearth.net/REST/v1/Locations/' + latstr + ',' + lonstr + '?o=xml&key=' + key
 
 
 
